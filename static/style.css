@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #000;
+    text-align: center;
+}
+
+.header h1 {
+    background-color: #008080;
+    color: white;
+    padding: 10px;
+}
+
+.search-container {
+    margin: 20px;
+}
+
+.admin-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #0000FF;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #000;
+    padding: 10px;
+}

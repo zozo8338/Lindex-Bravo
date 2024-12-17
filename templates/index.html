@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Engine</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>90s Search Engine</h1>
+    </div>
+    <div class="search-container">
+        <form action="/results" method="get">
+            <input type="text" name="q" placeholder="Enter your search query here" required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <button class="admin-btn" onclick="location.href='/admin'">Admin</button>
+</body>
+</html>

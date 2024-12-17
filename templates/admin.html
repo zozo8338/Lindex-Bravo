@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/admin.js" defer></script>
+</head>
+<body>
+    <h1>Admin Page</h1>
+    <form method="post">
+        <label for="url">URL:</label>
+        <input type="url" id="url" name="url" required><br>
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title"><br>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"></textarea><br>
+        <label for="favicon">Favicon URL:</label>
+        <input type="url" id="favicon" name="favicon"><br>
+        <label for="keywords">Keywords (comma-separated):</label>
+        <input type="text" id="keywords" name="keywords"><br>
+        <button type="submit">Add URL</button>
+    </form>
+    <h2>URL List</h2>
+    <table>
+        <tr>
+            <th>URL</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Keywords</th>
+            <th>Actions</th>
+        </tr>
+        {% for url in urls %}
+        <tr>
+            <td>{{ url[1] }}</td>
+            <td>{{ url[2] }}</td>
+            <td>{{ url[3] }}</td>
+            <td>{{ url[5] }}</td>
+            <td><button>Edit</button> <button>Delete</button></td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
